@@ -61,6 +61,20 @@
             margin: 25px 0;
             text-align: left;
         }
+        /* 🔥 AÑADE ESTA NUEVA REGLA JUSTO ABAJO PARA ARREGLAR CELULARES: */
+@media (max-width: 600px) {
+    .grid-tech {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas móviles */
+    }
+    .robot-container {
+        padding: 20px; /* Reduce los márgenes laterales en el teléfono */
+    }
+    h1 {
+        font-size: 1.8rem; /* Ajusta el título para que no se corte en smartphones */
+    }
+    .btn {
+        width: 100%; /* El botón ocupa todo el ancho cómodo del celular */
+    }
         .tech-card {
             background: rgba(255,255,255,0.03);
             padding: 15px;
