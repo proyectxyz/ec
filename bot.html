@@ -3,22 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bot Escalera Eléctrica - Descarga Oficial</title>
+    <title>🤖 RoboEscalera - ¡El Bot Infinito! 🚀</title>
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #0f172a; color: #f8fafc; text-align: center; padding: 50px; }
-        .container { max-width: 800px; margin: auto; background: #1e293b; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
-        h1 { color: #38bdf8; font-size: 2.5rem; }
-        p { color: #94a3b8; font-size: 1.2rem; line-height: 1.6; }
-        .btn-group { margin-top: 30px; display: flex; justify-content: center; gap: 20px; }
-        .btn { padding: 15px 30px; border-radius: 8px; font-weight: bold; text-decoration: none; font-size: 1rem; transition: 0.3s; }
-        .btn-win { background-color: #0284c7; color: white; }
-        .btn-win:hover { background-color: #0369a1; }
-        .btn-lin { background-color: #22c55e; color: white; }
-        .btn-lin:hover { background-color: #16a34a; }
-        .badge { background: #334155; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem; color: #cbd5e1; }
+        :root {
+            --neon-blue: #00f2ff;
+            --neon-green: #39ff14;
+            --dark-space: #060b19;
+            --panel-bg: #111930;
+        }
+        body { 
+            font-family: 'Courier New', Courier, monospace; 
+            background-color: var(--dark-space); 
+            color: #e2e8f0; 
+            text-align: center; 
+            padding: 40px 20px;
+            overflow-x: hidden;
+        }
+        .robot-container {
+            max-width: 750px;
+            margin: auto;
+            background: var(--panel-bg);
+            padding: 40px;
+            border-radius: 20px;
+            border: 3px solid var(--neon-blue);
+            box-shadow: 0 0 30px rgba(0, 242, 255, 0.2);
+            position: relative;
+        }
+        h1 { 
+            color: var(--neon-blue); 
+            font-size: 2.8rem; 
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            text-shadow: 0 0 10px var(--neon-blue);
+        }
+        .bip-bop {
+            font-size: 4rem;
+            animation: float 3s ease-in-out infinite;
+            display: inline-block;
+        }
+        .bocadillo {
+            background: #1e293b;
+            border-radius: 15px;
+            padding: 15px;
+            margin: 20px auto;
+            border-left: 5px solid var(--neon-green);
+            font-style: italic;
+            color: var(--neon-green);
+            max-width: 90%;
+            text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);
+        }
+        p { color: #94a3b8; font-size: 1.1rem; line-height: 1.6; }
+        .grid-tech {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 25px 0;
+            text-align: left;
+        }
+        .tech-card {
+            background: rgba(255,255,255,0.03);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #22325a;
+        }
+        .tech-card strong { color: var(--neon-blue); }
+        .btn-group { 
+            margin-top: 40px; 
+            display: flex; 
+            flex-direction: column;
+            gap: 15px; 
+            align-items: center;
+        }
+        .btn { 
+            width: 80%;
+            max-width: 400px;
+            padding: 18px; 
+            border-radius: 50px; 
+            font-weight: bold; 
+            text-decoration: none; 
+            font-size: 1.1rem; 
+            transition: all 0.3s ease; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+        .btn-win { 
+            background: linear-gradient(135deg, #00f2ff, #0066ff); 
+            color: white; 
+            border: 1px solid var(--neon-blue);
+        }
+        .btn-win:hover { 
+            transform: scale(1.03); 
+            box-shadow: 0 0 20px var(--neon-blue);
+        }
+        .btn-lin { 
+            background: linear-gradient(135deg, #39ff14, #059669); 
+            color: #060b19; 
+            border: 1px solid var(--neon-green);
+        }
+        .btn-lin:hover { 
+            transform: scale(1.03); 
+            box-shadow: 0 0 20px var(--neon-green);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(5deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
     </style>
 </head>
 <body>
+    <div class="robot-container">
+        <div class="bip-bop">🤖</div>
+        <h1>ROBO-ESCALERA v2.0</h1>
+        
+        <div class="bocadillo">
+            "¡BIP BOP! Humano, dame tus tramos de $20 USD. Yo los haré ciclar en el mercado infinito, guardaré tu botín en Bitcoin y volveré a la fila antes de que digas 'Blockchain'. ¡La escalera eléctrica nunca duerme!"
+        </div>
+
+        <p>Bienvenido al protocolo de trading automatizado multi-fila. Ejecuta este software de forma 100% local en tu ordenador sin entregar tus llaves API a servidores de terceros.</p>
+        
+        <div class="grid-tech">
+            <div class="tech-card">⚡ <strong>Efecto FIFO:</strong> Tus posiciones se empujan orgánicamente con la volatilidad.</div>
+            <div class="tech-card">🔒 <strong>Hold Blindado:</strong> Las ganancias se convierten y guardan directo en Bitcoin.</div>
+            <div class="tech-card">🚦 <strong>Multifila Activa:</strong> Controla BTC, BNB, ETH, SOL, TRX, HBAR y WLFI a la vez.</div>
+            <div class="tech-card">🛡️ <strong>Cero Comisiones:</strong> Es tu bot, corre en tu máquina, las ganancias son tuyas.</div>
+        </div>
+
     <div class="container">
         <h1>⚡ Bot Escalera Eléctrica ⚡</h1>
         <p>Automatiza tu estrategia de trading cíclico multi-fila en Binance y Bybit. Invierte en tramos fijos de $20, acumula HOLD permanente en tus activos favoritos y automatiza tus recompras de forma indefinida.</p>
